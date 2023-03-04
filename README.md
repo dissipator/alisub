@@ -57,6 +57,7 @@ aria2-rpc-enable       = false
 ### 最新记录
 
 1. 使用的是v2.8.1版本的aliyundrive-subscribe 因为最版的docker和二进制运行有问题。
+2. 升级到 V2.8.2_20230303
 
 
 ## 免责声明
