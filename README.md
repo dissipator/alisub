@@ -5,6 +5,11 @@
 【阿里云盘订阅】，主要用于云盘分享链最新资源转存、重命名、下载、资源管理等
 
 # 用[render](https://dashboard.render.com/)来部署aliyundrive-subscribe
+ 1. fork 本仓库，
+ 2. 创建render 账号授权 github仓库
+ 3. 创建web应用 选择fork的仓库
+ 4. 修改配置 写一个app.ini的Secret Files后再次部署
+ 
 # 将配置文件写入Secret Files 即可；
 ![image](https://user-images.githubusercontent.com/5356375/222882242-d2271639-c139-43c7-b234-28acaba1a61f.png)
 
