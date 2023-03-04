@@ -1,5 +1,5 @@
 FROM looby/aliyundrive-subscribe:latest
-ADD app.ini /app/conf/
+#ADD app.ini /app/conf/
 
 EXPOSE 8022
 
