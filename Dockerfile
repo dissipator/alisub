@@ -25,9 +25,11 @@ WORKDIR /app
 RUN mkdir -p /app/conf && cd /app
 COPY --from=build /app/aliyundrive-subscribe_linux_amd64 /app/aliyundrive-subscribe
 RUN chmod +x /app/aliyundrive-subscribe
-ADD app.ini /app/conf/
-RUN sed -e "s/app-auth-pass      = admin/app-auth-pass      = $PASSWD/g" conf/app.ini && cat conf/app.ini
-
+#ADD app.ini /app/conf/
+#RUN sed -e "s/app-auth-pass      = admin/app-auth-pass      = $PASSWD/g" conf/app.ini && cat conf/app.ini
+RUN mkdir -p /etc/secrets/
+ADD app.ini /etc/secrets/
+RUN ln -s /etc/secrets/app.ini  /app/conf/app.ini
 EXPOSE 8022
 
 #CMD ["/app/aliyundrive-subscribe"]
